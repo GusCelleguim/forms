@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a9f6de9148.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<main class="container" id="container">
+    <div class="form-container registrar">
+        <form>
+            <h1>Bem vindo </h1>
+            <div class="social-icons">
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-linkedin"></i></a>
+                <a><i class="fa-brands fa-google"></i></a>
+                <a><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <span> Seja Bem Vindo </span>
+            <input class="form-input" type="text" placeholder="Ray...">
+            <input class="form-input" type="text" placeholder="Email">
+            <input class="form-input" type="text" placeholder="****">
+            <button type="submit"> Registrarse</button>
+        </form>
+    </div>
+    <div class="form-container login">
+        <form class="form-control">
+
+            <h1>Login</h1>
+            <div class="social-icons">
+                <a><i class="fa-brands fa-facebook"></i></a>
+                <a><i class="fa-brands fa-linkedin"></i></a>
+                <a><i class="fa-brands fa-google"></i></a>
+                <a><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <span>Registrase de manera manual</span>
+            <input class="form-input" type="text" placeholder="Email">
+            <input class="form-input" type="text" placeholder="****">
+            <a></a>
+            <button type="submit">Login</button
+
+        </form>
+    </div>
+    <section class="toggle-container">
+
+        <div class="toggle">
+
+            <div class="toggle-panel toggle-right">
+                <h1>Seja Bem Vindo </h1>
+                <img src=""></img>
+                <span>Introduce tus datos personales</span>
+                <button id="login" class="hidden"> Login</button>
+            </div>
+
+            <div class="toggle-panel toggle-left">
+                <h1>Hola Amigo</h1>
+                <span>Registrate usando tus datos personales</span>
+                <button id="registrar" class="hidden">Registrar</button>
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+
+<script>
+    let login = document.getElementById("login");
+    let container = document.getElementById("container");
+    let registrar = document.getElementById("registrar");
+
+    login.addEventListener("click", () => {
+        container.classList.add("active");
+        document.body.style.background = "#b993d6";
+    });
+
+    registrar.addEventListener("click", () => {
+        container.classList.remove("active");
+        document.body.style.background = "linear-gradient(to right, white, #c9d6ff)";
+    });
+
+</script>
+
+</script>
+
+
+</body>
+</html>
